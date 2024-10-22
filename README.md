@@ -29,3 +29,15 @@ public class Project
     public DateTime Date { get; set; }
     public string Description { get; set; }
 }
+
+Metoder och Teknologier
+I skapandet av projektet har jag använt följande verktyg och teknologier:
+
+ASP.NET Core: Back-end utveckling
+Entity Framework Core: För databasinteraktion
+SQL Server: Databashantering
+NUnit: Enhetstester för API-metoder
+React (eller annan front-end stack): För front-end delen av portföljen
+Git och GitHub: Versionshantering och koddelning
+Azure: Hosting av API
+och distribution av webbplatsen
