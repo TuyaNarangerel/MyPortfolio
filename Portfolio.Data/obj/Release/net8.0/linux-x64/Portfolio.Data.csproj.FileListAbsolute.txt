@@ -1,0 +1,14 @@
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\bin\Release\net8.0\linux-x64\Portfolio.Data.deps.json
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\bin\Release\net8.0\linux-x64\Portfolio.Data.runtimeconfig.json
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\bin\Release\net8.0\linux-x64\Portfolio.Data.dll
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\bin\Release\net8.0\linux-x64\Portfolio.Data.pdb
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\obj\Release\net8.0\linux-x64\Portfolio.Data.csproj.AssemblyReference.cache
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\obj\Release\net8.0\linux-x64\Portfolio.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\obj\Release\net8.0\linux-x64\Portfolio.Data.AssemblyInfoInputs.cache
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\obj\Release\net8.0\linux-x64\Portfolio.Data.AssemblyInfo.cs
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\obj\Release\net8.0\linux-x64\Portfolio.Data.csproj.CoreCompileInputs.cache
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\obj\Release\net8.0\linux-x64\Portfolio.Data.dll
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\obj\Release\net8.0\linux-x64\refint\Portfolio.Data.dll
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\obj\Release\net8.0\linux-x64\Portfolio.Data.pdb
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\obj\Release\net8.0\linux-x64\Portfolio.Data.genruntimeconfig.cache
+C:\Users\tuya_\source\repos\Tuya_Portfolio\Portfolio.Data\obj\Release\net8.0\linux-x64\ref\Portfolio.Data.dll

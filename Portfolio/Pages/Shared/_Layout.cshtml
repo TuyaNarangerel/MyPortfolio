@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="~/css/site.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Tuya 
+        <span>Narangerel</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#references">References</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Tuya</span></h1>
+            <h3 class="text-animation">I'm a <span class="typing-text">.NET Developer</span></h3>
+            <div class="btn-group">
+                <a href="~/files/Tuya-CV.pdf" class="btn" download="Tuya_CV.pdf">Download CV</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="~/images/prof.jpg" alt="Portrait of Tuya">
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h2 class="section-heading">About Me</h2>
+        <p>Hi there! I'm Tuya, a passionate .NET developer who loves creating efficient and scalable web applications. Whether I'm coding a new feature, debugging a tricky bug, or learning the latest technology, I'm always up for a challenge. When I'm not in front of the computer, you can find me exploring new ideas, enjoying a good book, or tinkering with creative projects. I believe in lifelong learning, collaboration, and making the web a better place, one line of code at a time!</p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-heading">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <i class="devicon-csharp-plain colored"></i>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-dotnetcore-plain colored"></i>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-html5-plain colored"></i>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-css3-plain colored"></i>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-dotnetcore-plain colored"></i>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-azure-plain colored"></i>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-git-plain colored"></i>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-github-original colored"></i>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-react-original colored"></i>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-microsoftsqlserver-plain colored"></i>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-dot-net-plain colored"></i>
+            </div>
+        </div>
+      
+    </section>
+
+
+    <section class="project" id="project">
+        <h2 class="section-heading">Projects</h2>
+        <div class="project-container" id="project-list">
+            <a href="https://github.com/TuyaNarangerel/BankApp" target="_blank" class="project-item">
+            <div class="project-item">
+                <img src="~/images/BankApp.png" alt="BankApp">
+                <h3>BankApp</h3>
+                <p>A simple banking application.</p>
+                <p>ASP.Net Core, C#, SQL</p>
+            </div>
+            </a>
+            <a href="https://github.com/TuyaNarangerel/CarSimulator" target="_blank" class="project-item">
+            <div class="project-item">
+                <img src="~/images/CarSimulator.png" alt="Testning">
+                <h3>Car Simulator</h3>
+                <p>A console application designed to simulate car driving scenarios for testing purposes.</p>
+                <p>Unit testing with NUnit</p>
+            </div>
+            </a>
+            <a href="https://github.com/TuyaNarangerel/AdvertisementApi" target="_blank" class="project-item">
+            <div class="project-item">
+                <img src="~/images/Annons_WebAPI.png" alt="Testning">
+                <h3>Advertisement WebAPI</h3>
+                <p>A RESTful WebAPI designed for managing ads and listings efficiently.</p>
+                <p>.NET WebAPI (RESTful)</p>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="references" id="references">
+        <h2 class="section-heading">References</h2>
+        <div class="reference-card">
+            <p>"Great test. Excellent level of detail. You are so skilled; I wish you had attempted the higher-level tasks."</p>
+        <h4>"Teacher"</h4>
+        </div>
+        <div class="reference-divider"></div>
+        <div class="reference-card">
+            <p>"She is a pleasure to work with and a fighter who is always eager to learn."</p>
+            <h4>"Employer"</h4>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-heading">Contact <span>Me</span></h2>
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <textarea placeholder="Your message"></textarea>
+            </div>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/tuya-narangerel-5a895a123/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/TuyaNarangerel"><i class='bx bxl-github'></i></a>
+        </div>
+        <p>Tuya Narangerel | All Rights Reserved</p>
+    </footer>
+
+    <script src="~/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2024-09-27T14:29:23.8961132Z"
+    }
+  },
+  "parameters": {
+    "Tuya.subscriptionId": {
+      "Name": "Tuya.subscriptionId",
+      "Type": "subscription",
+      "Value": "b8018fe5-86a9-4e77-9962-145d72f92c1f"
+    },
+    "Tuya.resourceName": {
+      "Name": "Tuya.resourceName",
+      "Type": null,
+      "Value": "Tuya"
+    },
+    "Tuya.resourceGroupLocation": {
+      "Name": "Tuya.resourceGroupLocation",
+      "Type": null,
+      "Value": "swedencentral"
+    },
+    "Tuya.resourceGroupName": {
+      "Name": "Tuya.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "TuyaPortfolio"
+    }
+  }
+}

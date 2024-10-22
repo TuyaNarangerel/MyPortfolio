@@ -1,0 +1,639 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #121212; /* En mörkare bakgrundsfärg för bättre kontrast */
+    --second-bg-color: #1d1d1d; /* Mörkgrå för sektioner */
+    --text-color: #ffffff; /* Vit text för maximal läsbarhet */
+    --main-color: #00b0f0; /* Ändrat från rosa till blå för bättre läsbarhet */
+    --highlight-color: #f39c12; /* Gult/orange för att dra uppmärksamhet till viktiga element */
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-padding-top: 80px; /* Justera denna höjd beroende på headerns faktiska höjd */
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+    .logo span {
+        text-shadow: 0 0 25px var(--main-color);
+    }
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+    .navbar a:hover,
+    .navbar a.active {
+        color: var(--main-color);
+        border-bottom: 3px solid var(--main-color);
+    }
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+.section-heading {
+    font-size: 3.5rem; /* Ändra detta för att justera storleken */
+    font-weight: bold;
+    color: var(--main-color); /* Använd samma färg för enhetlighet */
+    margin-bottom: 2rem; /* Avstånd till nästa element */
+    text-align: center;
+    letter-spacing: 1px; /* En liten bokstavsavstånd */
+    text-transform: uppercase; /* Gör rubrikerna versaler */
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+    flex-direction: row-reverse;
+    
+}
+
+span {
+    color: var(--main-color);
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+    .home-content h3 {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        font-size: 3.5rem;
+        color: var(--text-color);
+    }
+
+    .home-content h1 {
+        font-size: 7rem;
+        font-weight: 700;
+        margin-top: 1.5rem;
+        line-height: 1;
+        color: var(--text-color);
+    }
+
+
+.home-img {
+    border-radius: 50%;
+}
+
+    .home-img img {
+        position: relative;
+        top: 3rem;
+        width: 26vw;
+        border-radius: 50%;
+        box-shadow: 0 0 25px var(--main-color);
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+
+        .home-img img:hover {
+            box-shadow: 0 0 25px var(--main-color), 
+                        0 0 50px var(--main-color), 
+                        0 0 100px var(--main-color);
+        }
+
+.btn-group {
+    display: flex;
+    justify-content: center; /* Centrerar knappen om du vill */
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--main-color);
+    box-shadow: 0 0 15px var(--main-color);
+    border-radius: 50px;
+    font-size: 1.4rem;
+    color: #121212; /* Ändrat till en mörk färg för bättre kontrast mot den ljusa knappen */
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background: var(--highlight-color); /* Gult/orange för bättre hover-effekt */
+        color: #000000;
+    }
+
+.text-animation {
+    font-size: 34px;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.typing-text {
+    display: inline-block;
+    white-space: nowrap; /* Gör att texten inte bryter till en ny rad */
+    border: none; /* Tar bort markören och eventuella kantlinjer */
+    padding: 0; /* Ingen extra padding behövs */
+}
+
+
+.about {
+    padding: 6rem 12%;
+    text-align: center;
+}
+
+    .about h2 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        color: var(--main-color);
+    }
+
+    .about p {
+        font-size: 1.8rem; /* Increase the font size */
+        line-height: 1.6; /* Add more line height for readability */
+        max-width: 800px; /* Set max width for better structure */
+        margin: auto; /* Center the text */
+        color: var(--text-color);
+        text-align: justify;
+    }
+
+
+.skills {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Anpassa antalet kolumner för att passa tre rader */
+    grid-auto-rows: 1fr; /* Styr höjden på varje rad */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2c2c2c;
+    border-radius: 50%; /* Gör den yttre kanten cirkulär */
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item i {
+        font-size: 48px;
+        color: #fff;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr); /* Minskar till tre kolumner för att sprida sig på tre rader */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr); /* Anpassar till två kolumner på mindre skärmar */
+    }
+}
+
+    .project {
+        padding: 7rem 0;
+        background: var(--second-bg-color);
+        color: var(--text-color);
+        text-align: center;
+    }
+
+    .project h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: var(--main-color);
+    }
+
+    .project-container {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+
+        .project-container a {
+            text-decoration: none; /* Ta bort understrykning */
+            color: inherit; /* Se till att texten behåller sin färg */
+        }
+
+            .project-container a:hover {
+                transform: translateY(-5px); /* För att bibehålla hovringseffekten */
+            }
+
+    .project-item {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--bg-color);
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s;
+        max-width: 400px;
+        overflow: hidden;
+        padding: 2rem;
+    }
+
+    .project-item img {
+        width: 100%;
+        height: 150px; /* Sätt en fast höjd så att alla bilder får samma storlek */
+        border-radius: 0.4rem;
+        margin-bottom: 0.8rem;
+        transition: 0.3s;
+    }
+
+        .project-item h3 {
+            font-size: 2.8rem; /* Större rubrikstorlek */
+            font-weight: bold;
+            margin-bottom: 1.5rem; /* Mer utrymme under rubriken */
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        .project-item p {
+            font-size: 1.5rem; /* Större paragraftext */
+            line-height: 2; /* Öka avståndet mellan rader */
+            font-weight: 200;
+            margin-bottom: 2rem; /* Mer utrymme mellan textblocken */
+            text-align: center;
+            color: var(--text-color);
+        }
+
+    .project-item:hover {
+        transform: translateY(-5px);
+    }
+
+.references {
+    padding: 5rem 0;
+    text-align: center;
+    background: var(--bg-color);
+}
+
+    .references h2 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        color: var(--main-color);
+    }
+
+.reference-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+    .reference-card p {
+        font-size: 1.6rem;
+        line-height: 1.8;
+        color: #ddd;
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+
+    .reference-card h4 {
+        font-size: 1.4rem;
+        color: var(--highlight-color);
+        margin-top: 0.5rem;
+    }
+
+    .reference-card:hover {
+        transform: scale(1.05);
+    }
+
+.reference-divider {
+    width: 50px;
+    height: 4px;
+    background: var(--main-color);
+    margin: 2rem auto;
+}
+
+
+    .contact {
+        background-color: var(--bg-color);
+        padding: 4rem 0;
+        text-align: center;
+    }
+
+    .contact .heading {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        color: white;
+       
+    }
+
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .contact .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .contact .input-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .contact .input-box input, .contact textarea {
+        width: calc(50% - 1rem);
+        padding: 1.5rem;
+        font-size: 1.4rem;
+        color: var(--text-color);
+        background: var(--second-bg-color);
+        border-radius: 10px;
+        border: 2px solid var(--main-color);
+        outline: none;
+        resize: none;
+    }
+
+    .contact textarea {
+        width: 100%;
+        height: 150px;
+    }
+
+    .contact .btn {
+        padding: 1rem 3rem;
+        background: var(--main-color);
+        color: black;
+        border: none;
+        border-radius: 4rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .contact .btn:hover {
+        background: white;
+        color: var(--main-color);
+        transform: scale(1.05);
+    }
+
+
+    .footer {
+        padding: 2rem 0;
+        background-color: var(--second-bg-color);
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    .footer social {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .footer .social a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.5rem;
+        height: 4.5rem;
+        background: transparent;
+        border: 2px solid var(--main-color);
+        font-size: 2.5rem;
+        border-radius: 50%;
+        color: var(--main-color);
+        margin: 3rem 1.5rem 3rem 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .footer .social a:hover {
+        color: var(--text-color);
+        transform: scale(1.3)translateY(-5px);
+        box-shadow: 0 0 25px var(--main-color);
+        background-color: var(--main-color);
+    }
+
+    .footer p {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+/* Anpassa skärmstorlek och layout */
+@media (max-width: 1285px) {
+    html {
+        font-size: 55%; /* Anpassa till 55% för bättre skärmstorlek */
+    }
+
+    .services-container {
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2, 1fr); /* Anpassa till 2 kolumner */
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .timeline-items::before {
+        left: 7px; /* Anpassa placering för timeline */
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+
+    .services {
+        padding-bottom: 7rem;
+    }
+
+    .testimonials .wrapper {
+        grid-template-columns: repeat(1, 1fr); /* En kolumn på mindre skärmar */
+    }
+
+    .contact form {
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 895px) {
+    #menu-icon {
+        display: block; /* Visa menyikonen */
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20%);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+
+        .navbar.active {
+            display: block; /* Visa navigationsmenyn när den är aktiv */
+        }
+
+        .navbar a {
+            display: block;
+            font-size: 2rem;
+            margin: 3rem 0;
+            color: white;
+        }
+
+    .home {
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+
+    .home-content p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .home-img img {
+        width: 56vw; /* Större bild på mindre skärmar */
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr); /* En kolumn på mindre skärmar */
+    }
+}
+
+@media (max-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Ändra till en kolumn */
+        gap: 20px; /* Mellanrum mellan projekten */
+        padding: 0 2rem;
+    }
+
+    .project-item {
+        max-width: 100%; /* Gör projekten 100% breda */
+    }
+}

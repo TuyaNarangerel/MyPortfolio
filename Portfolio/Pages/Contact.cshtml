@@ -1,0 +1,24 @@
+﻿@page
+@model Portfolio.Pages.ContactModel
+
+<div class="container">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Email subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here." required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="form-message" style="display:none; color:green;">Your message has been sent successfully!</div>
+    <div id="form-error" style="display:none; color:red;">There was an error sending your message. Please try again.</div>
+</div>
